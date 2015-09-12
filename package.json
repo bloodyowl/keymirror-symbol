@@ -3,6 +3,12 @@
   "version": "1.0.1",
   "description": "a function to mirror object keys as symbol",
   "main": "dist/index.js",
+  "files": [
+    "package.json",
+    "dist/index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "prebuild": "rm -fr dist && mkdir dist",
     "build": "babel lib/index.js --out-file dist/index.js",
