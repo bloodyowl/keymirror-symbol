@@ -1,0 +1,31 @@
+{
+  "name": "keymirror-symbol",
+  "version": "1.0.0",
+  "description": "a function to mirror object keys as symbol",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rm -fr dist && mkdir dist", 
+    "build": "babel lib/index.js --out-file dist/index.js",
+    "test": "babel-node --stage 0 lib/__tests__/index.js",
+    "test": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bloodyowl/keymirror-symbol"
+  },
+  "keywords": [
+    "keymirror",
+    "symbol"
+  ],
+  "author": "bloodyowl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bloodyowl/keymirror-symbol/issues"
+  },
+  "homepage": "https://github.com/bloodyowl/keymirror-symbol",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "tape": "^4.2.0",
+    "tape-catch": "^1.0.4"
+  }
+}
