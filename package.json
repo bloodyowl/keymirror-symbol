@@ -1,13 +1,13 @@
 {
   "name": "keymirror-symbol",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a function to mirror object keys as symbol",
   "main": "dist/index.js",
   "scripts": {
-    "prebuild": "rm -fr dist && mkdir dist", 
+    "prebuild": "rm -fr dist && mkdir dist",
     "build": "babel lib/index.js --out-file dist/index.js",
     "test": "babel-node --stage 0 lib/__tests__/index.js",
-    "test": "npm run build && npm publish"
+    "bump": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
